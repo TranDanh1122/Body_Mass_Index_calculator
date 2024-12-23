@@ -523,12 +523,15 @@ i.sleep {
     .about .content::before {
         display: none;
     }
+
     .tips {
         justify-content: center;
     }
+
     .tip {
         width: calc(50% - 1rem);
     }
+
     .limits {
         display: flex;
         flex-flow: row wrap;
@@ -536,13 +539,16 @@ i.sleep {
         row-gap: 3.5rem;
         justify-content: center;
     }
+
     .limits .content {
         text-align: center;
         width: 100%;
     }
+
     .item3 {
         display: none;
     }
+
     .limit {
         width: calc(50% - .5rem);
     }
@@ -558,28 +564,33 @@ i.sleep {
     .container {
         width: 95%;
     }
-    
-    .about { 
+
+    .about {
         justify-content: center;
     }
+
     .about img {
         width: 100%;
     }
 
     .about .content {
-       flex-basis: 100%;
-       text-align: center;
+        flex-basis: 100%;
+        text-align: center;
     }
+
     .about .content p {
         text-align: justify;
     }
+
     .tip {
         width: 100%;
     }
+
     .limits .content p {
         text-align: justify;
 
     }
+
     .limit {
         width: 100%;
     }
