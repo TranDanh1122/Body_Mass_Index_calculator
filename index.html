@@ -17,84 +17,87 @@
     </div>
   </header>
   <main>
-    <section class="hero container">
-      <div class="left">
-        <h1>Body Mass Index Calculator
-        </h1>
-        <p class="desc">
-          Better understand your weight in relation to your height using our
-          body mass index (BM) calculator. While BMI is not the sole determinant
-          of a healthy weight, it offers a valuable starting point to evaluate
-          your overall health and well-being.
-        </p>
-      </div>
-      <div class="right">
-        <h2> Enter your details below</h2>
+    <section class="hero_wrapper">
+      <div class="hero container">
 
-        <form unit_type="met" action="#" novalidate>
-          <fieldset class="radio_group">
-            <label for="met">
-              <input type="radio" name="unit_type" id="met" checked value="met">
-              Metric
-            </label>
-            <label for="imp">
-              <input type="radio" name="unit_type" id="imp" value="imp">
-              Imperial
-            </label>
-          </fieldset>
 
-          <fieldset class="form_group col-6 met">
-            <label for="cm">Height</label>
-            <input type="text" class="form_control " name="cm" id="cm">
-            <span class="unit">cm</span>
-          </fieldset>
-          <fieldset class="form_group col-6 met">
-            <label for="kg">Weight</label>
-            <input class="form_control" type="text" name="kg" id="kg">
-            <span class="unit">kg</span>
-          </fieldset>
+        <div class="left">
+          <h1>Body Mass Index Calculator
+          </h1>
+          <p class="desc">
+            Better understand your weight in relation to your height using our
+            body mass index (BM) calculator. While BMI is not the sole determinant
+            of a healthy weight, it offers a valuable starting point to evaluate
+            your overall health and well-being.
+          </p>
+        </div>
+        <div class="right">
+          <h2> Enter your details below</h2>
 
-          <fieldset imp class="form_group col-6">
-            <label for="ft">Height</label>
-            <input class="form_control" type="text" name="ft" id="ft">
-            <span class="unit">ft</span>
-          </fieldset>
-          <fieldset imp class="form_group col-6">
-            <label for="inc">&nbsp; </label>
-            <input class="form_control" type="text" name="inc" id="inc">
-            <span class="unit">inc</span>
-          </fieldset>
-          <fieldset imp class="form_group col-6">
-            <label for="st">Weight</label>
-            <input class="form_control" type="text" name="st" id="st">
-            <span class="unit">st</span>
-          </fieldset>
-          <fieldset imp class="form_group col-6">
-            <label for="lbs"> &nbsp;</label>
-            <input class="form_control" type="text" name="lbs" id="lbs">
-            <span class="unit">lbs</span>
-          </fieldset>
-        </form>
-        <div empty class="info">
-          <div class="empty">
-            <h2>Welcome</h2>
-            <p>
-              Enter your height and weight and you’ll see your BMI result here
-            </p>
-          </div>
-          <div class="bmi">
-            <div class="index">
-              <span>Your BMI is...</span>
-              <h2 id="bmi_result">23.4</h2>
+          <form unit_type="met" action="#" novalidate>
+            <fieldset class="radio_group">
+              <label for="met">
+                <input type="radio" name="unit_type" id="met" checked value="met">
+                Metric
+              </label>
+              <label for="imp">
+                <input type="radio" name="unit_type" id="imp" value="imp">
+                Imperial
+              </label>
+            </fieldset>
+
+            <fieldset class="form_group col-6 met">
+              <label for="cm">Height</label>
+              <input type="text" class="form_control " name="cm" id="cm">
+              <span class="unit">cm</span>
+            </fieldset>
+            <fieldset class="form_group col-6 met">
+              <label for="kg">Weight</label>
+              <input class="form_control" type="text" name="kg" id="kg">
+              <span class="unit">kg</span>
+            </fieldset>
+
+            <fieldset imp class="form_group col-6">
+              <label for="ft">Height</label>
+              <input class="form_control" type="text" name="ft" id="ft">
+              <span class="unit">ft</span>
+            </fieldset>
+            <fieldset imp class="form_group col-6">
+              <label for="inc">&nbsp; </label>
+              <input class="form_control" type="text" name="inc" id="inc">
+              <span class="unit">inc</span>
+            </fieldset>
+            <fieldset imp class="form_group col-6">
+              <label for="st">Weight</label>
+              <input class="form_control" type="text" name="st" id="st">
+              <span class="unit">st</span>
+            </fieldset>
+            <fieldset imp class="form_group col-6">
+              <label for="lbs"> &nbsp;</label>
+              <input class="form_control" type="text" name="lbs" id="lbs">
+              <span class="unit">lbs</span>
+            </fieldset>
+          </form>
+          <div empty class="info">
+            <div class="empty">
+              <h2>Welcome</h2>
+              <p>
+                Enter your height and weight and you’ll see your BMI result here
+              </p>
             </div>
-            <p class="more_info">
-              Your BMI suggests you’re a healthy weight. Your ideal weight is between <strong id="suggests">63.3kgs -
-                85.2kgs</strong>
-            </p>
+            <div class="bmi">
+              <div class="index">
+                <span>Your BMI is...</span>
+                <h2 id="bmi_result">23.4</h2>
+              </div>
+              <p class="more_info">
+                Your BMI suggests you’re a healthy weight. Your ideal weight is between <strong id="suggests">63.3kgs -
+                  85.2kgs</strong>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
 
     </section>
     <section class="about container">
