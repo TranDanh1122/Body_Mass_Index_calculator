@@ -27,8 +27,8 @@ let bmiMachine = {
         bmiMachine.data.kg = parseFloat(bmiMachine.data.st || 0) * 6.35029 + parseFloat(bmiMachine.data.lbs || 0) * 0.453592
     },
     tranformPound: () => {
-         bmiMachine.sg_min = bmiMachine.sg_min / 0.453592
-         bmiMachine.sg_max= bmiMachine.sg_max / 0.453592
+        bmiMachine.sg_min = bmiMachine.sg_min / 0.453592
+        bmiMachine.sg_max = bmiMachine.sg_max / 0.453592
     },
     caculate: () => {
         if (bmiMachine.unitType == 'imp') bmiMachine.tranformMetric()
@@ -39,7 +39,7 @@ let bmiMachine = {
     suggests: () => {
         bmiMachine.sg_min = 18.5 * Math.pow(bmiMachine.data.cm / 100, 2)
         bmiMachine.sg_max = 24.9 * Math.pow(bmiMachine.data.cm / 100, 2)
-       if( bmiMachine.unitType == 'imp') bmiMachine.tranformPound()
+        if (bmiMachine.unitType == 'imp') bmiMachine.tranformPound()
     }
 }
 
@@ -50,9 +50,6 @@ let handleInput = () => {
     bmiMachine.caculate()
     result.textContent = bmiMachine.bmi.toFixed(2)
     let suggestsUnit = bmiMachine.unitType == 'met' ? 'kg' : 'lbls'
-    if(bmiMachine.unitType == 'imp') {
-        
-    }
     suggests.textContent = `${bmiMachine.sg_min.toFixed(2)}${suggestsUnit} - ${bmiMachine.sg_max.toFixed(2)}${suggestsUnit}`
     info.removeAttribute('empty')
 }
